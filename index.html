@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> METICULOUS </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+   <div id="header">
+       <!-- nav pc/table -->
+       <img src="logo.png">
+       <ul id="nav">
+           <li><a  class="sub-li" href="">We do</a></li>
+           <li><a href="">Contact</a></li>
+           <li><a href="">Sign in</a></li>
+       </ul>
+       <div id="nav-ipad">
+        <button class="box js-login">  <i class="fas fa-bars"></i> </button> 
+       </div>
+   </div>
+   <!-- ipad/mobile -->
+   <div class="modal ">
+       <div class="modal-content">
+           <div class="modal-close">
+           <i class="fas fa-times"></i> 
+           </div>
+           <ul id="nav-menu">
+            <li><a  class="sub-li" href="">We do</a></li>
+            <li><a href="">Contact</li>
+            <li><a href=""> Sign in </a></li>
+           </ul>
+       </div>
+   </div>
+   <div id="slider">
+       <div class="slider-text">
+           <div class="sub-slider-text">
+               <h1>WE <br> WILL <br>  BETTTER <br>  CLEAN <br>  SERVICES</h1>
+               <p class="box">
+                   Contact Us
+               </p>
+           </div>
+           <div class="box-img">
+           <img class="first-img" src="clean.png"> 
+           <img class="sec-img" src="clean2.png">
+        </div>
+       </div>
+   </div>
+   <div id="content">
+      <div class="content-text">
+          <div class="sub-content-text">
+              <h1>What we do?</h1>
+              <div class="content-box-1">
+                <i class="fas fa-house-damage"></i>
+                <h2>House Clean</h2>
+                <p class="about">There are many variations of passages of Lorem Ipsum available, 
+                    but the majority have suffered alteration in some form, by injected humour, 
+                    or randomised words which don't look even slightly believable</p>
+              </div>
+              <div class="content-box-1">
+                <i class="fas fa-building"></i>
+                <h2>OFFICE CLEAN</h2>
+                <p class="about">There are many variations of passages of Lorem Ipsum available, 
+                    but the majority have suffered alteration in some form, by injected humour, 
+                    or randomised words which don't look even slightly believable</p>
+              </div>
+              <div class="content-box-1">
+                <i class="fas fa-industry"></i>
+                <h2>FACTORY CLEAN</h2>
+                <p class="about">There are many variations of passages of Lorem Ipsum available, 
+                    but the majority have suffered alteration in some form, by injected humour, 
+                    or randomised words which don't look even slightly believable</p>
+              </div>
+          </div>
+      </div>
+   </div>
+   <div id="content-2">
+       <div class="content-2-text">
+           <div class="sub-content-2-text">
+               <h1>TESTIMONIAL</h1>
+               <div class="box-img-2"> 
+               <img src="pic.png">
+               <div class="box-text"> 
+                <h2> Jonson Donat </h2>
+                <br>
+                <p class="about3"> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe
+                </p>
+            </div>
+            </div>
+           </div>
+       </div>
+   </div>
+   <div id="content-3">
+       <div class="content-text-3">
+           <div class="sub-content-3"> 
+              <h1>Contact us</h1>
+             <div class="login-box">
+                 <div class="all-box"> 
+                     <form action=" ">
+               <input type="text" class="text" required placeholder="Name">
+               <input type="text" class="text"  required  placeholder="Phone Number" >
+               <input type="email" class="text"  required placeholder="Email" >
+               <input type="text" class="text"  required placeholder="Services" >
+               <input type="submit" class="submit"  required  value="submit">
+            </form>
+            </div>
+           </div>
+        </div>
+       </div>
+   </div>
+   <div id="content-4">
+       <div class="content-4-text">
+           <div class="sub-content-4">
+               <h1>FREQUENTLY ASKED QUESTIONS</h1>
+               <div class="content-box-4">
+                   <h2> Where can I get some?</h2>
+                   <p class="about-4">It is a long established fact that a reader will be distracted by the readable content of 
+                       a page when looking at it's layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                        as opposed It is a long established fact that a reader will be distracted </p>
+               </div>
+               <div class="content-box-4">
+                <h2> How to do clean office</h2>
+                <p class="about-4">It is a long established fact that a reader will be distracted by the readable content of 
+                    a page when looking at it's layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                     as opposed It is a long established fact that a reader will be distracted
+                    as opposed</p>
+            </div>
+           </div>
+       </div>
+   </div>
+   <div id="footer">
+       <div class="footer-text">
+         <div class="sub-footer-text">
+             <h1>Free Multipurpose
+                Responsive Landing Page 2045</h1>
+                <p class="about-footer">Modern lighting fast & easily Customizable</p>
+                <p class="box-footer"> Get a quote</p>
+         </div>
+       </div>
+   </div>
+   <script>
+         menus = document.querySelectorAll(".js-login")
+         modal = document.querySelector(".modal")
+         modalclose = document.querySelector(".modal-close")
+         function showModal() {
+            modal.classList.add('open')
+         }
+         function hideModal() {
+            modal.classList.remove('open')
+         }
+         for (const menu of menus){
+            menu.addEventListener('click',showModal)
+         }
+         modalclose.addEventListener('click',hideModal)
+   </script>
+</body>
+</html>

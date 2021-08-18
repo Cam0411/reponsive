@@ -1,0 +1,833 @@
+*
+{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#header 
+{
+    background:#343a40;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#header #nav 
+{
+    padding: 10px;
+    float: right;
+}
+#nav li 
+{
+    display: inline-block;
+    line-height: 50px;
+  
+}
+#nav li a 
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 17px;
+    font-size: 20px;
+}
+#nav .sub-li 
+{
+   color: #FDD430;
+}
+
+#nav-ipad i 
+{
+    color: #fff;
+    position: absolute;
+    top: 1%;
+    padding: 15px;
+    display: none;
+    font-size: 30px;
+    right: 5%;
+    cursor: pointer;
+}
+#nav-menu .sub-li 
+{
+    color: #FDD430;
+}
+.modal 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0004;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.modal .modal-content 
+{
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+ .modal-close i
+{
+   position: absolute;
+   top:0;
+   right: 0;
+   padding: 20px;
+   font-size: 30px;
+}
+#nav-menu li 
+{
+    list-style-type: none;
+}
+#nav-menu li a
+{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.modal.open 
+{
+    display: flex;
+}
+#slider 
+{
+    height: 1000px;
+    background: #FDD430;
+}
+.slider-text 
+{
+    width: 100%;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sub-slider-text 
+{
+    padding: 20px;
+    margin-right: 10%;
+}
+.sub-slider-text h1 
+{
+    font-size: 70px;
+    color: #fff;
+    line-height: 80px;
+}
+.first-img 
+{
+    border: 10px solid #343a40;
+    border-radius: 50%;
+}
+.sec-img 
+{
+    border: 10px solid #343a40;
+    border-radius: 50%;
+    width: 200px;
+    margin-top: 50px;
+}
+.slider-text  .box-img 
+{
+    display: block;
+  
+}
+.slider-text .box 
+{
+    padding: 20px;
+    background: #fff;
+    width: 40%;
+    margin-top: 60px;
+}
+.slider-text .box:hover 
+{
+    background: #000;
+    color: #fff;
+}
+.sub-content-text h1
+{
+   text-align: center;
+   margin-bottom: 60px;
+   font-size: 50px;
+   color: #fff;
+   text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+   width:100% ;
+   padding-bottom: 40px;
+}
+#content 
+{
+    height: 1000px;
+    background: #343a40;
+}
+#content .content-text 
+{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content  .about 
+{
+    width: 300px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+#content .content-box-1
+{
+    display: inline-block;
+}
+.content-box-1 
+{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+.content-box-1 i 
+{
+   font-size: 30px;
+   margin-bottom: 30px;
+   border: 3px solid #FDD430;
+   padding: 40px;
+   border-radius: 50%;
+}
+#content-2 
+{
+    height:700px;
+}
+.content-2-text 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+.sub-content-2-text h1
+{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    padding: 20px;
+}
+.box-img-2 
+{
+    display: flex;
+}
+.box-text 
+{
+    display: block;
+    padding: 20px;
+}
+.box-text h2
+{
+    margin-top: 160px;
+    
+}
+.about3
+{
+    width: 800px;
+    line-height: 30px;
+    font-size: 20px;
+}
+#content-3
+{
+   height: 1000px;
+   background: #FDD430;
+}
+.content-text-3
+{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-text-3 h1 
+{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+.login-box 
+{
+   
+    height: 400px;
+    background: #fff;
+    width: 800px;
+}
+.login-box .text 
+{
+    display: block;
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 90%;
+    background: #000;
+   color: #fff;
+}
+.login-box .submit 
+{
+    text-align: center;
+    background: #000;
+    color: #fff;
+    margin-top: 20px;
+    width: 20%;
+    padding: 15px;
+    margin-left: 305px;
+}
+.login-box .text::placeholder 
+{
+    color: #fff;
+}
+.all-box 
+{
+    padding: 10px;
+}
+.sub-content-3 
+{
+    display: block;
+}
+#content-4 
+{
+    height: 900px;
+}
+.content-4-text 
+{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-content-4 h1
+{
+   text-align: center;
+   padding: 20px;
+   margin-bottom: 60px;
+}
+.content-box-4 h2
+{
+    border-bottom: 2px solid #FDD430;
+    padding: 20px;
+    margin-top: 40px;
+}
+.about-4 
+{
+    margin-bottom: 30px;
+    padding: 20px;
+    line-height: 35px;
+    width: 900px;
+}
+#footer
+{
+    height: 500px;
+    background: #343a40;
+    color: #fff;
+}
+.footer-text 
+{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-footer 
+{
+    text-align: center;
+    margin-top: 20px;
+}
+.box-footer 
+{
+    text-align: center;
+    margin-top: 40px;
+    background: #fff;
+    padding: 20px;
+    color: #000;
+    width: 20%;
+    margin-left: 300px;
+}
+.about-4 
+{
+    margin-bottom: 30px;
+    padding: 20px;
+    line-height: 35px;
+    width: 800px;
+    font-size: 15px;
+}
+#content-4 
+{
+    height: 1800px;
+}
+.content-4-text 
+{
+    height: 1700px;
+    font-size: 15px;
+}
+@media (max-width:599px) 
+{
+    #nav li a {
+        display: none;
+    }
+    #nav-ipad i 
+    {
+        display: block;
+    }
+    #header {
+        height: 70px;
+    }
+    #slider 
+{
+    height: 1200px;
+    background: #FDD430;
+}
+    .slider-text {
+        flex-direction: column;
+        height: 1100px;
+    }
+    .sub-slider-text h1 
+    {
+        font-size: 30px;
+        color: #fff;
+        line-height: 40px;
+    }
+    .slider-text .box 
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .first-img 
+    {
+      width:200px;
+    }
+    .sec-img 
+    {
+        margin-top: 0px;
+        width: 100px;
+    }
+    .box-img 
+    {
+        margin-left: 50px;
+    }
+    #content 
+{
+    height: 2000px;
+    background: #343a40;
+}
+#content .content-text 
+{
+    height: 1900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content  .about 
+{
+    width: 210px;
+    margin-top: 20px;
+   
+}
+#content .content-box-1
+{
+    display: inline-block;
+   
+    text-align: center;
+}
+.content-box-1 
+{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+.content-box-1 i 
+{
+   font-size: 30px;
+   margin-bottom: 30px;
+   border: 3px solid #FDD430;
+   padding: 40px;
+}
+.sub-content-text h1
+{
+   text-align: left;
+   margin-bottom: 60px;
+   font-size: 30px;
+   color: #fff;
+   text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+   width:100% ;
+   padding-bottom: 40px;
+  padding-left: 30px;
+}
+.box-img-2 
+{
+    flex-direction: column;
+}
+.box-img-2 img 
+{
+    width: 250px;
+    margin-left: 30px;
+}
+#content-2 
+{
+    height:1100px;
+}
+.content-2-text 
+{
+    height: 1000px;
+}
+.about3
+{
+    width: 200px;
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.box-text h2 
+{
+    margin-left: 30px;
+}
+.sub-content-2-text h1
+{
+  font-size: 30px;
+}
+#content-3
+{
+   height: 1200px;
+   background: #FDD430;
+}
+.content-text-3
+{
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-text-3 h1 
+{
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+.login-box 
+{
+   
+    height: 400px;
+    background: #fff;
+    width: 250px;
+}
+.login-box .text 
+{
+    display: block;
+    padding: 15px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 90%;
+    background: #000;
+   color: #fff;
+}
+.login-box .submit 
+{
+    text-align: center;
+    background: #000;
+    color: #fff;
+    margin-top: 20px;
+    width: 90%;
+    padding: 15px;
+    margin-left: 10px;
+}
+.login-box .text::placeholder 
+{
+    color: #fff;
+}
+.all-box 
+{
+    padding: 10px;
+}
+.sub-content-3 
+{
+    display: block;
+}
+#content-4 
+{
+    height: 1600px;
+}
+.content-4-text 
+{
+    height: 1500px;
+}
+.about-4 
+{
+    margin-bottom: 30px;
+    padding: 20px;
+    line-height: 35px;
+}
+.footer-text 
+{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-footer-text h1 
+{
+    font-size: 15px;
+    display: none;
+}
+.about-footer 
+{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.box-footer 
+{
+    text-align: center;
+    margin-top: 40px;
+    background: #fff;
+    padding: 15px;
+    color: #000;
+    width: 70%;
+    margin-left: 30px;
+}
+.about-4 
+{
+    margin-bottom: 30px;
+    padding: 20px;
+    line-height: 35px;
+    width: 280px;
+    font-size: 15px;
+}
+#content-4 
+{
+    height: 1800px;
+}
+.content-4-text 
+{
+    height: 1700px;
+    font-size: 15px;
+}
+.sub-content-4 h1 
+{
+    font-size: 22px;
+}
+}
+@media (min-width:600px) and (max-width:1230px) {
+    
+    #header {
+        height: 70px;
+    }
+ 
+    .slider-text {
+        flex-direction: column;
+        height: 1100px;
+    }
+    #slider 
+{
+    height: 1200px;
+}
+.sub-slider-text h1 
+{
+    font-size: 40px;
+    color: #fff;
+    line-height: 50px;
+}
+.slider-text .box 
+{
+    width: 60%;
+    margin-bottom: 20px;
+}
+.first-img 
+{
+  width:400px ;
+}
+#content 
+{
+    height: 1700px;
+    background: #343a40;
+}
+#content .content-text 
+{
+    height: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content  .about 
+{
+    width: 300px;
+    margin-top: 20px;
+}
+#content .content-box-1
+{
+    display: inline-block;
+}
+.content-box-1 
+{
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+.content-box-1 i 
+{
+   font-size: 30px;
+   margin-bottom: 30px;
+   border: 3px solid #FDD430;
+   padding: 40px;
+}
+.sub-content-text h1
+{
+   text-align: center;
+   margin-bottom: 60px;
+   font-size: 40px;
+   color: #fff;
+   text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+   width:100% ;
+   padding-bottom: 40px;
+}
+.box-img-2 
+{
+    flex-direction: column;
+}
+.box-img-2 img 
+{
+    width: 400px;
+}
+#content-2 
+{
+    height:1100px;
+}
+.content-2-text 
+{
+    height: 1000px;
+}
+.about3
+{
+    width: 400px;
+    line-height: 30px;
+    font-size: 20px;
+}
+#content-3
+{
+   height: 1000px;
+   background: #FDD430;
+}
+.content-text-3
+{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-text-3 h1 
+{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+.login-box 
+{
+   
+    height: 400px;
+    background: #fff;
+    width: 550px;
+}
+.login-box .text 
+{
+    display: block;
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 90%;
+    background: #000;
+   color: #fff;
+}
+.login-box .submit 
+{
+    text-align: center;
+    background: #000;
+    color: #fff;
+    margin-top: 20px;
+    width: 20%;
+    padding: 15px;
+    margin-left: 210px;
+}
+.login-box .text::placeholder 
+{
+    color: #fff;
+}
+.all-box 
+{
+    padding: 10px;
+}
+.sub-content-3 
+{
+    display: block;
+}
+.about-4 
+{
+    margin-bottom: 30px;
+    padding: 20px;
+    line-height: 35px;
+}
+.sub-footer-text h1 
+{
+    font-size: 20px;
+ 
+}
+.box-footer 
+{
+    text-align: center;
+    margin-top: 40px;
+    background: #fff;
+    padding: 20px;
+    color: #000;
+    width: 30%;
+    margin-left: 150px;
+}
+.about-4 
+{
+    margin-bottom: 30px;
+    padding: 20px;
+    line-height: 35px;
+    width: 500px;
+}
+#content-4 
+{
+    height: 1800px;
+}
+.content-4-text 
+{
+    height: 1700px;
+}
+}
+
+@media (min-width:1231px) {
+   #content .img1 {
+    flex: 50%;
+    width: 10%;
+  }
+}
+
