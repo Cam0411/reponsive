@@ -13,9 +13,9 @@
        <!-- nav pc/table -->
        <img src="logo.png">
        <ul id="nav">
-           <li><a  class="sub-li" href="">We do</a></li>
-           <li><a href="">Contact</a></li>
-           <li><a href="">Sign in</a></li>
+           <li><a  class="sub-li" href="#">We do</a></li>
+           <li><a href="#">Contact</a></li>
+           <li><a href="#">Sign in</a></li>
        </ul>
        <div id="nav-ipad">
         <button class="box js-login">  <i class="fas fa-bars"></i> </button> 
@@ -29,8 +29,8 @@
            </div>
            <ul id="nav-menu">
             <li><a  class="sub-li" href="">We do</a></li>
-            <li><a href="">Contact</li>
-            <li><a href=""> Sign in </a></li>
+            <li><a href="#content-3">Contact</li>
+            <li><a href="#"> Sign in </a></li>
            </ul>
        </div>
    </div>
@@ -155,6 +155,15 @@
             menu.addEventListener('click',showModal)
          }
          modalclose.addEventListener('click',hideModal)
+
+         var menus =document.querySelectorAll('#nav li a[href*="#"]');
+        for (i=0; i<menus.length;i++) {
+            var menu = menus[i];
+            menu.onclick =function() {
+                modal.style.height =null;
+            }
+        }
+
    </script>
 </body>
 </html>

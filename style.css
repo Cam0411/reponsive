@@ -38,7 +38,6 @@
 {
    color: #FDD430;
 }
-
 #nav-ipad i 
 {
     color: #fff;
@@ -50,6 +49,7 @@
     right: 5%;
     cursor: pointer;
 }
+
 #nav-menu .sub-li 
 {
     color: #FDD430;
@@ -78,6 +78,13 @@
     align-items: center;
     z-index: 1;
 }
+.modal-content {
+    animation: mymove linear 0.6s;
+  }
+  @keyframes mymove {
+      from {transform: translateX(100%);}
+      to {transform: translateX(0%);}
+    }
  .modal-close i
 {
    position: absolute;
